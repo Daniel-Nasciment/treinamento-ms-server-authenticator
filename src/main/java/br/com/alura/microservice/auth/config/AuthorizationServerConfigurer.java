@@ -31,6 +31,8 @@ public class AuthorizationServerConfigurer extends AuthorizationServerConfigurer
 
 		// CRIAÇÃO DA APLICAÇÃO QUE FARA A REQUISIÇÃO DE AUTENTICAÇÃO DO USUÁRIO EM MEMÓRIA
 		
+		// TESTE DE IDENTIFICAÇÃO DA APLICAÇÃO: localhost:8088/oauth/token
+		
 		clients.inMemory()
 			.withClient("loja")
 			.secret(passwordEncoder.encode("loja123"))
