@@ -38,6 +38,12 @@ public class AuthorizationServerConfigurer extends AuthorizationServerConfigurer
 			.secret(passwordEncoder.encode("loja123"))
 			.authorizedGrantTypes("password")
 			.scopes("web", "mobile");
+		
+		clients.inMemory()
+		.withClient("fornecedor")
+		.secret(passwordEncoder.encode("loja123"))
+		.authorizedGrantTypes("password")
+		.scopes("web", "mobile");
 	}
 
 	@Override
